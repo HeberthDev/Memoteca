@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       CabecalhoComponent,
+      RodapeComponent
    ],
   imports: [
     BrowserModule,

@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { CriarPensamentoComponent } from './pensamentos/criar-pensamentos/criar-pensamento.component';
 import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       CabecalhoComponent,
-      RodapeComponent
+      RodapeComponent,
+      CriarPensamentoComponent,
    ],
   imports: [
     BrowserModule,

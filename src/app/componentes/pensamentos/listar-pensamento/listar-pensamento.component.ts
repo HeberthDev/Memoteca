@@ -1,3 +1,4 @@
+import { PensamentoService } from './../pensamento.service';
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
 
@@ -9,9 +10,12 @@ import { Pensamento } from '../pensamento';
 export class ListarPensamentoComponent implements OnInit {
   listaPensamentos: Pensamento[] = [];
 
-  constructor() { }
+  constructor(
+    private service: PensamentoService,
+  ) { }
 
   ngOnInit(): void {
+    const pensamentos = this.service.listar();
   }
 
 }

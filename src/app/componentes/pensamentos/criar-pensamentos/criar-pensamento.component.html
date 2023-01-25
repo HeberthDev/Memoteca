@@ -104,15 +104,16 @@
 
     <div class="acoes">
       <button 
-        class="botao"
+        [disabled]="!formulario.valid"
         (click)="criarPensamento()"
-      >Salvar
+        [ngClass]="habilitarBotao()"
+        >Salvar
       </button>
 
       <button 
         class="botao"
         (click)="cancelar()"
-      >Cancelar
+        >Cancelar
       </button>
     </div>
   </form>

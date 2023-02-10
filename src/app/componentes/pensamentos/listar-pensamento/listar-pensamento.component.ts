@@ -13,6 +13,8 @@ export class ListarPensamentoComponent implements OnInit {
 
   haMaisPensamentos: boolean = true;
 
+  filtro: string = '';
+
   constructor(
     private service: PensamentoService,
   ) { }

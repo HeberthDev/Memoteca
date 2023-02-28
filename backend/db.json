@@ -4,42 +4,49 @@
       "id": 1,
       "conteudo": "Que bom que vc veio",
       "autoria": "Nay",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     },
     {
       "id": 2,
       "conteudo": "Estudando Angular! Agora embalei já era!",
       "autoria": "Dev Front End",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Angular é o melhor",
       "autoria": "Nay",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "conteudo": "Pensamento de Teste",
       "autoria": "Dev Angular",
       "modelo": "modelo3",
+      "favorito": true,
       "id": 4
     },
     {
       "conteudo": "Testando validação.",
       "autoria": "Dev Heberth",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "Testando Paginação",
       "autoria": "Dev",
       "modelo": "modelo3",
+      "favorito": true,
       "id": 6
     },
     {
       "conteudo": "Adicionando mais conteúdo!",
       "autoria": "Front End Anônimo",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 7
     }
   ]

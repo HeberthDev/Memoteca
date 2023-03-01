@@ -19,20 +19,20 @@
       "conteudo": "Angular é o melhor",
       "autoria": "Nay",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Pensamento de Teste",
       "autoria": "Dev Angular",
       "modelo": "modelo3",
-      "favorito": true,
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Testando validação.",
       "autoria": "Dev Heberth",
       "modelo": "modelo2",
-      "favorito": false,
+      "favorito": true,
       "id": 5
     },
     {

@@ -16,6 +16,8 @@ export class PensamentoComponent implements OnInit {
     favorito: false,
   }
 
+  @Input() listaFavoritos: Pensamento[] = [];
+
   constructor(
     private servicoPensamentos: PensamentoService,
   ) { }
@@ -40,6 +42,10 @@ export class PensamentoComponent implements OnInit {
   }
 
   atualizarFavoritos() {
-    this.servicoPensamentos.mudarFavorito(this.pensamento).subscribe()
+    this.servicoPensamentos.mudarFavorito(this.pensamento).subscribe(() => {
+      this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.pensamento), 1);
+      console.log("Teste: ", this.listaFavoritos.indexOf(this.pensamento));
+      console.log("Teste 2: ", this.pensamento);
+    })
   }
 }

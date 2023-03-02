@@ -16,6 +16,8 @@ export class ListarPensamentoComponent implements OnInit {
   favoritos: boolean = false;
   listaFavoritos: Pensamento[] = [];
 
+  titulo: string = "Meu Mural";
+
   constructor(
     private service: PensamentoService,
     private router: Router,
@@ -51,6 +53,7 @@ export class ListarPensamentoComponent implements OnInit {
     this.haMaisPensamentos = true;
     this.paginaAtual = 1;
     this.favoritos = true;
+    this.titulo = "Meus Favoritos";
 
     this.service.listar(this.paginaAtual, this.filtro, this.favoritos)
       .subscribe(listaPensamentosFavoritos => {
@@ -60,8 +63,8 @@ export class ListarPensamentoComponent implements OnInit {
   }
 
   recarregarComponente(){
-    /* this.favoritos = false;
-    this.paginaAtual = 1; */
+    this.favoritos = false;
+    this.paginaAtual = 1;
 
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     this.router.onSameUrlNavigation = 'reload';
